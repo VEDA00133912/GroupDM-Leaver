@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DiscordグループDM退出</title>
+    <meta name="description" content="DiscordグループDM退出ツールです">
+    <meta name="keywords" content="Discord,グループDM,スパム">
+    <meta name="author" content="りょう">
+    <meta name="theme-color" content="#87b900">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:title" content="DiscordグループDM退出ツール">
+    <meta property="og:description" content="DiscordグループDM退出ツールです">
+    <meta property="og:image" content="https://group-leaver-64tr.onrender.com/images/img.png">
+    <meta property="og:url" content="https://group-leaver-64tr.onrender.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DiscordグループDM退出ツール">
+    <meta name="twitter:description" content="DiscordグループDM退出ツールです">
+    <meta name="twitter:image" content="https://group-leaver-64tr.onrender.com/images/img.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main>
+      <header>
+        <h1>GroupDM Leaver</h1>
+      </header>
+      <div class="social-icons">
+        <a href="https://x.com/ryo_001339" target="_blank" aria-label="Twitter">
+          <img src="{{ url_for('static', filename='images/twitter.svg') }}" alt="Twitter">
+        </a>
+        <a href="https://discord.gg/ESRGwGQhxc" target="_blank" aria-label="Discord">
+          <img src="{{ url_for('static', filename='images/discord.svg') }}" alt="Discord">
+        </a>
+        <a href="https://github.com/veda001339" target="_blank" aria-label="GitHub">
+          <img src="{{ url_for('static', filename='images/github.svg') }}" alt="GitHub">
+        </a>
+        <a href="https://www.youtube.com/@00139-ryo" target="_blank" aria-label="YouTube">
+          <img src="{{ url_for('static', filename='images/youtube.svg') }}" alt="YouTube">
+        </a>
+      </div>
+    <div class="container">
+        <form id="tokenForm">
+            <input type="password" id="token" name="token" placeholder="Discord Token を入力" required />
+            <button type="submit">実行</button>
+        </form>
+    </div>
+
+    <div class="log-container">
+        <h2>Log</h2>
+        <div id="message" class="log-box">待機中...</div>
+    </div>
+<footer>&copy; 2025 ryo_001339 All Rights Reserved.</footer>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
